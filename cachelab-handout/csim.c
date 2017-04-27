@@ -94,7 +94,8 @@ void freeCache()
 void accessData(mem_addr_t addr)
 {
  int i;
- long long set_num =
+ long long set_num =( address >> b) & set_index_mask;
+ long long tag = (address >>(b+s));
 
 }
 
